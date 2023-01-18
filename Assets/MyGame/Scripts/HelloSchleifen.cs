@@ -1,22 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HelloSchleifen : MonoBehaviour
 {
 
 
-    public int[,] array = new int [5,2];
-  
+    public string[,] array = new string[3, 4]
+  {
+        {"A", "B", "C", "D" }, {"E", "F", "G", "H" },{"I", "J", "K", "L" }
+  };
+
+
     void Start()
     {
-        
-        for (int i = 0; i < 5; i++)
+        int row = array.GetLength(0);
+        int col = array.GetLength(1);
+
+        for (int i = 0; i < row; i++)
         {
-            for (int j = 0; j < 2; j++)
+            for (int j = 0; j < col; j++)
             {
                 Debug.Log(array[i, j]);
             }
         }
     }
+
+
 }

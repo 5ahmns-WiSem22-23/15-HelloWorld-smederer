@@ -3,7 +3,7 @@ using UnityEngine;
 public class HelloVariable : MonoBehaviour
 {
     int myInt = 0;
-    bool myBool = true;
+   
     int[] myArray = new int[3] { 0, 0, 0 };
     string a = "Hallo";
 
